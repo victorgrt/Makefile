@@ -57,15 +57,15 @@ compiling:
 	@echo "\n"
 
 deleting : 
-	@echo "\\033[1;34m\033[5m DELETED\\033[0;39m"
+	@echo "\\033[1;31m\033[5m DELETED FILES :\\033[0;39m"
 	@tput sgr0;
-	@${foreach value, $(OBJ), echo "\\033[1;34m >> \\033[0;39m" ${value};}
+	@${foreach value, $(OBJ), echo "\\033[1;31m >> \\033[0;39m" ${value};}
 
 deletings : 
-	@echo "\\033[1;34m\033[5m DELETED\\033[0;39m"
+	@echo "\\033[1;31m\033[5m DELETED FILES :\\033[0;39m"
 	@tput sgr0;
-	@${foreach value, $(OBJ), echo "\\033[1;34m >> \\033[0;39m" ${value};}
-	@${foreach value, $(NAME), echo "\\033[1;34m >> \\033[0;39m" ${value};}
+	@${foreach value, $(OBJ), echo "\\033[1;31m >> \\033[0;39m" ${value};}
+	@${foreach value, $(NAME), echo "\\033[1;31m >> \\033[0;39m" ${value};}
 
 chat :
 	@echo "\n ^~^  , \n('Y') ) \n/   \\/ \n(\\|||/)\n"
