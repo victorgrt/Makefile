@@ -53,7 +53,7 @@ re : fclean all
 compiling:
 	@${foreach value, $(NAME), echo "\\033[1;32m COMPILED INTO \033[32m\033[5m" ${value};}
 	@tput sgr0;
-	@${foreach value, $(SRC), echo "\\033[1;37m >> \\033[0;29m" ${value};}
+	@${foreach value, $(SRC), echo "\\033[1;33m >> \\033[0;29m" ${value};}
 	@echo "\n"
 
 deleting : 
